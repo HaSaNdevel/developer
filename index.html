@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        
+        <img src="img/dev.jpg" alt="" class="picture">
+        <div class="top-navbar">
+            <img src="img/logo-removebg-preview.png" alt="">
+          <div class="menu">
+            <input type="checkbox" id="menu-bar">
+            <label for="menu-bar" id="lb">&#9776</label>
+            <ul id="ul">
+                <div id="x">&#9587</div>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">More</a></li>
+            </ul>
+               <button onclick="dark()" id="btn"><img src="img/sun-and-moon-pokemon-set-symbol-150x150.jpg" alt=""></button>
+          </div>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="box2">
+            <div class="block">
+                <h1>IT-developer</h1>
+                <!-- <p>IT so'zi Ingliz tilidan olingan bo'lib "IT-Informotion Texnology" degan ma'noni bildiradi.</p> -->
+                <p>Web sayt yaratishni xoxlaysizmi?Unda bu Saytdagi onlain darslarga ishtirok eting va web dasturchi bo'ling.</p>
+                <details>
+                    <summary>Batafsil</summary>
+                    <small>Darslar jami 10 oy bo'ladi.Darslar 2 qisimdan iborat Front-end va Back-end.Darslar narxi oyiga 200 ming sum, haftada 3 kun.</small>
+                </details>
+            </div>
+            <img src="img/website-development.png" alt="" class="picture2">
+        </div>
+
+        <div class="box2">
+            <img src="img/devolopers.jpg" alt="" class="picture2">
+            <div class="block">
+                <h1>Front-end</h1>
+                <p>Front-end darslarni to'liq tugatgan dasturchiga sertifikat beriladi va yaxshi dasturchilarni ish bilan ta'minlaymiz.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <h1 class="text">Darslarga qo'shilish</h1>
+
+    <div class="form">
+        <form action="">
+        <label for="">Ism <br>
+            <input type="text" name="Name" placeholder="Ism" required>
+        </label>
+        <label for="">Familya <br>
+            <input type="text" name="Username" placeholder="Familya" required>
+        </label>
+        <label for="">Telefon raqam <br>
+            <input type="number" name="number" placeholder="Telephone" required>
+        </label>
+        <div class="box3">
+        <input type="submit" value="qo'shilish" class="btn2">
+        </div>
+        </form>
+    </div>
+
+    <div class="bottom">
+
+        <div class="block2">
+            <div class="box4">
+                <h1>Ziyo uquv markazi</h1>
+            </div>
+            <p>Manzil: Qashqadaryo viloyati Nishon tumani Nuriston shaharchasi "Ijtimoiy" uquv markazi</p>
+        </div>
+
+        <div class="block2">
+            <details>
+                <summary>Yana ma'lumotlar</summary>
+                <p>Oflain darslar 300 ming sum.Dars vaqtlari toq kunlari 2 soatdan o'tiladi.Darslarni tugatgan kishiga sertifikat beriladi va ish bilan tamilalanadi.</p>
+            </details>
+        </div>
+        <div class="block2">
+            <p>Tel: +998 99 999 99 99 </p>
+            <p>Ijtimoiy tarmoqlarimiz &#9661</p>
+            <div class="block3">
+                <img src="img/telegram black.png" alt="">
+                <img src="img/instagram.png" alt="">
+                <img src="img/youtube black.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function dark() {
+            var element=document.body.classList.toggle("dark-mode");
+        }
+
+
+        let label=document.getElementById("lb");
+        let input=document.getElementById("menu-bar");
+        let ul=document.getElementById("ul");
+
+        label.onclick = function() {
+            if (ul.style.visibility = "hidden") {
+                ul.style.visibility = "visible";
+                ul.style.flexDirection = "column";
+                ul.style.display = "flex";
+                ul.style.justifyContent = "center";
+                ul.style.alignItems = "center";
+            }
+        }
+
+        let x=document.getElementById("x");
+        x.onclick = function() {
+            ul.style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
